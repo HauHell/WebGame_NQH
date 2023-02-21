@@ -1,0 +1,867 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: helvetica;
+    
+}
+/* phần menu */
+
+.header{
+    padding-bottom: 50px;
+    width: 1365px;
+    margin: auto;
+}
+.menu{
+    z-index: 1;
+    position: fixed;
+    background-color: #111111;
+    width: 1365px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.menutrai{
+    display: flex;
+    height: 50px;
+    width: 800px;
+}
+.menutrai img{
+    height: 50px;
+}
+.textmenu{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-left: 20px;
+    font-weight: 700;
+    position: relative;
+    display: block;
+    
+}
+.more{
+    background-color: #111111;
+    position: absolute;
+    width: 250px;
+    left: 0;
+    font-size: 12px;
+    display: none;
+    top: 50px;
+    z-index: 1;
+   
+}
+.textmenu .more li a{
+    color: white;
+    padding-left: 20px;
+    font-weight: 700;
+    transform: scale(1);
+   
+}
+.moremini:hover{
+   background-color: #eb2222;
+    transform: scale(1.1);
+    box-shadow:#6b0a0a 0px 3px 3px 3px ;
+}
+.menutrai .textmenu a{
+    color: #777777;
+    text-decoration: none;
+}
+.textmenu:hover .more{
+   display: block;
+   
+}
+
+
+.menuphai{
+    display: flex;
+    width: 495px;
+    height: 50px;
+}
+.menuphai li{
+    line-height: 50px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.textmenudown{
+    width: 150px;
+    height: 50px;
+    padding-top: 5px;
+    padding-right: 30px;
+    text-align: center;
+
+}
+.down{
+    height: 40px;
+    width: 200px;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: #eb2222	;
+  padding-right: 20px;
+  position: relative;
+  transform: scale(1);
+  color: whitesmoke;
+}
+.down:hover #muiten{
+    transform:  rotate(180deg);
+    transition: 0.3s;
+    padding-left: 10px;
+}
+.down:hover{
+    transform: scale(1.1);
+}
+.timkiem{
+    width: 200px;
+    text-align: right;
+    margin-right: 0%;
+}
+.timmini{
+    width: 250px;
+    padding-right: 60px;
+}
+.timmini:hover #nhap{
+    width: 200px;
+   opacity: 1;
+}
+.timmini{
+    display: flex;
+}
+#nhap{
+    font-size: 13px;
+    width: 0px;
+    opacity: 0;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 5px;
+    transition: 0.7s;
+    border-bottom:slategrey solid 2px ;
+    border-left: slategrey solid 2px;
+}
+
+#search{
+    font-size: 24px;
+    padding-left: 10px;
+    color: whitesmoke;
+    padding-top: 10px;
+}
+.search{
+    padding-top: 5px;
+}
+.textmenu:hover a{
+    color: white;
+}
+.textmenu::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: #BB0000;
+    box-shadow: white 1px 1px 1px;
+    height: 0px;
+    width: 100%;
+    transition: 0.6s;
+}
+.textmenu:hover::after{
+   height: 2.5px;
+  
+}
+.downmini {
+    position: absolute;
+    top: 50px;
+    background-color:black;
+    
+    width: 200px;
+    display: none;
+    border-radius: 5px;
+
+}
+.downmini .textdown a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.textdown a{
+    padding-right: 20px;
+    transform: scale(1);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.textdown:hover{
+    transform: scale(1.1);
+    color: whitesmoke;
+    box-shadow:  #6b0a0a 0px 3px 3px 3px;
+    background-color: #eb2222;
+
+}
+.textmenudown:hover .downmini{
+   display: block;
+}
+
+
+/* phần detail */
+.boss{
+    width: 1365px;
+    margin: auto;
+    height: 600px;
+}
+
+.details{
+    list-style: none;
+    display: flex;
+    margin: auto;
+    opacity: 85%;
+    
+}
+.detailleft{
+margin: auto;
+padding-left: 30%;
+padding-top: 110px;
+
+}
+.detaildata{
+    list-style: none;
+    background-color:#EEEEEE;
+    width: 300px;
+    margin: auto;
+    height: 400px;
+    box-shadow: black 5px 5px;
+}
+.detailheader{
+font-size: 35px;
+text-align: center;
+color: black;
+margin: auto;
+padding-bottom: 20px;
+padding-top: 10px;
+font-weight: 700;
+
+}
+.detailleft:hover .detailheader{
+    color: green;
+}
+.phandauduoimini{
+display: flex;
+margin: auto;
+list-style: none;
+padding-bottom: 20px;
+padding-left: 13%;
+}
+.head1{
+    font-size: 30px;
+    color: blue;
+    padding-left: 50px;
+    padding-right: 20px;
+    margin: auto;
+ 
+}
+.head1:hover{
+    color: #000044;
+}
+
+.head2{
+    font-size: 30px;
+    color: red;
+    padding-right: 20px;
+    
+}
+.head2:hover{
+    color: #990000;
+}
+.head3:hover{
+    color: #003300;
+}
+.head3{
+    font-size: 30px;
+    color: green;
+
+}
+.phanaccount{
+    margin: auto;
+    text-transform: capitalize;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+ 
+}
+.phanformtk{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin: auto;
+}
+
+#taikhoan{
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+    background-color:#E0EEE0;
+    width: 100px;
+    transition: 0.7s;
+}
+.phanformtk:hover #taikhoan{
+    width: 240px;
+
+}
+.phanformmk{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin: auto;
+   
+}
+#matkhau{
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+    width: 100px;
+    background-color: #E0EEE0;
+    transition: 0.7s;
+}
+.phanformmk:hover #matkhau{
+    width: 240px;
+}
+.dk2{
+  text-align: center;
+  font-size:15px ;  
+  text-transform: capitalize;
+  color: black;
+  padding-bottom: 10px;
+
+  
+}
+.dk2:hover a{
+    color: #990000;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.phancuoi{
+    padding-left: 22%;
+    
+}
+#signin{
+    font-size: 18px;
+    margin: auto;
+   border-radius: 20px;
+   width: 170px;
+   height: 40px;
+   text-align: center;
+   background-color:#FF6600;
+   color: whitesmoke;
+}
+
+.detailright{
+margin: auto;
+padding-right:30%;
+padding-top: 50px;
+}
+.rightdata{
+    list-style: none;
+    background-color:#6699FF;
+    width: 300px;
+    margin: auto;
+    height: 400px;
+    box-shadow: black 5px 5px;
+  
+}
+.text1{
+    padding-top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.detailright:hover .text1{
+    color:crimson;
+}
+.text2{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+.texttam{ 
+    height: 5px;
+    background-color: red;
+    content: "";
+    width: 10px;
+    margin: auto;
+}
+.f:hover .texttam {
+    width: 90%;
+    transition: 0.9s;
+    border-radius: 10px;
+}
+#icongame{
+    padding-left: 10px;
+    font-size: 25px;
+    color:white;
+}
+.text3{
+    padding-top: 10px;
+    padding-left: 22%;
+}
+#signup{
+    font-size: 18px;
+    margin: auto;
+   border-radius: 20px;
+   width: 170px;
+   height: 40px;
+   text-align: center;
+   background-color:#FF6600;
+   color: whitesmoke;
+}
+.text4 img{
+    height: 180px;
+    width: 100%;
+    bottom: 0;
+
+}
+.text4{
+margin-top: px;
+}
+.phancuoi:hover #signin{
+    background-color: green;
+}
+.text3:hover #signup{
+    background-color: red;
+}
+
+
+/* Responsive IPAD AIR */
+@media only screen and (max-width: 820px)
+
+{
+    /* phần menu */
+
+.header{
+    padding-bottom: 20px;
+    width: 820px;
+    margin: auto;
+}
+.menu{
+    z-index: 1;
+    position: fixed;
+    background-color: #111111;
+    width: 820px;
+    height: 30px;
+    display: flex;
+    
+    justify-content: space-between;
+}
+.menutrai{
+    display: flex;
+    height: 30px;
+    width: 500px;
+}
+.menutrai img{
+    height: 30px;
+}
+.textmenu{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 9px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    font-weight: 500;
+    position: relative;
+    display: block;
+    
+}
+.more{
+    background-color: #111111;
+    position: absolute;
+    width: 150px;
+    left: 0;
+    font-size: 10px;
+    display: none;
+    top: 50px;
+    z-index: 1;
+   
+}
+.textmenu .more li a{
+    color: white;
+    padding-left: 10px;
+    font-weight: 500;
+    transform: scale(1);
+   
+}
+.moremini:hover{
+   background-color: #eb2222;
+    transform: scale(1.1);
+    box-shadow:#6b0a0a 0px 3px 3px 3px ;
+}
+.menutrai .textmenu a{
+    color: #777777;
+    text-decoration: none;
+}
+.textmenu:hover .more{
+   display: block;
+   
+}
+
+
+.menuphai{
+    display: flex;
+    width: 320px;
+    height: 30px;
+}
+.menuphai li{
+    line-height: 30px;
+    font-size: 9px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.textmenudown{
+    width: 100px;
+    height: 30px;
+    padding-top: 5px;
+    padding-right: 20px;
+    text-align: center;
+    margin-left: 40px;
+
+}
+.down{
+    height: 20px;
+    width: 100px;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: #eb2222	;
+  padding-right: 20px;
+  position: relative;
+  transform: scale(1);
+  color: whitesmoke;
+}
+.down:hover #muiten{
+    transform:  rotate(180deg);
+    transition: 0.3s;
+    padding-left: 5px;
+}
+.down:hover{
+    transform: scale(1.1);
+}
+.tim{
+    width: 150px;
+    padding-right: 60px;
+}
+.timkiem{
+    width: 150px;
+    text-align: right;
+    margin-right: 0%;
+}
+.timmini{
+    width: 150px;
+    padding-right: 50px;
+}
+.timmini:hover #nhap{
+    width: 150px;
+   opacity: 1;
+}
+.timmini{
+    display: flex;
+}
+#nhap{
+    font-size: 9px;
+    width: 0px;
+    opacity: 0;
+    height: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    transition: 0.7s;
+    border-bottom:slategrey solid 2px ;
+    border-left: slategrey solid 2px;
+}
+
+#search{
+    font-size: 15px;
+    padding-left: 10px;
+    color: whitesmoke;
+    padding-top: 3px;
+}
+.search{
+    padding-top: 3px;
+}
+.textmenu:hover a{
+    color: white;
+}
+.textmenu::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: #BB0000;
+    box-shadow: white 1px 1px 1px;
+    height: 0px;
+    width: 100%;
+    transition: 0.6s;
+}
+.textmenu:hover::after{
+   height: 2.5px;
+  
+}
+.downmini {
+    position: absolute;
+    top: 30px;
+    background-color:black;
+    width: 100px;
+    display: none;
+    border-radius: 5px;
+
+}
+.downmini .textdown a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.textdown a{
+    padding-right: 20px;
+    transform: scale(1);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.textdown:hover{
+    transform: scale(1.1);
+    color: whitesmoke;
+    box-shadow:  #6b0a0a 0px 3px 3px 3px;
+    background-color: #eb2222;
+
+}
+.textmenudown:hover .downmini{
+   display: block;
+}
+
+
+/* phần detail */
+.boss{
+    width: 820px;
+    margin: auto;
+    height: 500px;
+}
+
+.details{
+    list-style: none;
+    display: flex;
+    margin: auto;
+    opacity: 85%;
+    
+}
+.detailleft{
+margin: auto;
+padding-left: 20%;
+padding-top:50px;
+
+}
+.detaildata{
+    list-style: none;
+    background-color:#EEEEEE;
+    width: 250px;
+    margin: auto;
+    height: 300px;
+    box-shadow: black 5px 5px;
+}
+.detailheader{
+font-size: 25px;
+text-align: center;
+color: black;
+margin: auto;
+padding-bottom: 0px;
+padding-top: 10px;
+font-weight: 1000;
+
+}
+.detailleft:hover .detailheader{
+    color: green;
+}
+.phandauduoimini{
+display: flex;
+margin: auto;
+list-style: none;
+padding-bottom: 0px;
+padding-left: 6%;
+}
+.head1{
+    font-size: 25px;
+    color: blue;
+    padding-left: 50px;
+    padding-right: 20px;
+    margin: auto;
+ 
+}
+.head1:hover{
+    color: #000044;
+}
+
+.head2{
+    font-size: 25px;
+    color: red;
+    padding-right: 20px;
+    
+}
+.head2:hover{
+    color: #990000;
+}
+.head3:hover{
+    color: #003300;
+}
+.head3{
+    font-size: 25px;
+    color: green;
+
+}
+.phanaccount{
+    margin: auto;
+    text-transform: capitalize;
+    color: black;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 10px;
+ 
+}
+.phanformtk{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin: auto;
+}
+
+#taikhoan{
+    font-size: 15px;
+    color: black;
+    border-radius: 5px;
+    background-color:#E0EEE0;
+    width: 100px;
+    transition: 0.7s;
+}
+.phanformtk:hover #taikhoan{
+    width: 180px;
+
+}
+.phanformmk{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin: auto;
+   
+}
+#matkhau{
+    font-size: 15px;
+    color: black;
+    border-radius: 5px;
+    width: 100px;
+    background-color: #E0EEE0;
+    transition: 0.7s;
+}
+.phanformmk:hover #matkhau{
+    width: 180px;
+}
+.dk2{
+  text-align: center;
+  font-size:13px ;  
+  text-transform: capitalize;
+  color: black;
+  padding-bottom: 20px;
+
+  
+}
+.dk2:hover a{
+    color: #990000;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.phancuoi{
+    padding-left: 22%;
+    
+}
+#signin{
+    font-size: 18px;
+    margin: auto;
+   border-radius: 20px;
+   width: 130px;
+   height: 30px;
+   text-align: center;
+   background-color:#FF6600;
+   color: whitesmoke;
+}
+
+.detailright{
+margin: auto;
+padding-right:30%;
+padding-top: 30px;
+}
+.rightdata{
+    list-style: none;
+    background-color:#6699FF;
+    width: 250px;
+    margin: auto;
+    height: 300px;
+    box-shadow: black 5px 5px;
+  
+}
+.text1{
+    padding-top: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    font-weight: 1000;
+    padding-bottom: 0px;
+}
+.detailright:hover .text1{
+    color:crimson;
+}
+.text2{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+.texttam{ 
+    height: 3px;
+    background-color: red;
+    content: "";
+    width: 10px;
+    margin: auto;
+}
+.f:hover .texttam {
+    width: 90%;
+    transition: 0.9s;
+    border-radius: 10px;
+}
+#icongame{
+    padding-left: 10px;
+    font-size: 15px;
+    color:white;
+}
+.text3{
+    padding-top: 10px;
+    padding-left: 22%;
+}
+#signup{
+    font-size: 18px;
+    margin: auto;
+   border-radius: 20px;
+   width: 130px;
+   height: 30px;
+   text-align: center;
+   background-color:#FF6600;
+   color: whitesmoke;
+}
+.text4 img{
+    height: 180px;
+    width: 100%;
+    bottom: 0;
+
+}
+.text4{
+margin-top: px;
+}
+.phancuoi:hover #signin{
+    background-color: green;
+}
+.text3:hover #signup{
+    background-color: red;
+}
+
+}

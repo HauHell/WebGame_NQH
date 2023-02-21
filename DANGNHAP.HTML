@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="DANGNHAP.CSS">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+</head>
+<body  >
+  <!-- phần menu -->
+    <div class="header">
+        <div class="menu">
+          <ul class="menutrai">
+            <li><img src="https://th.bing.com/th/id/R.9e80c9223c82aba13ebcd1cebc31c026?rik=YHRDjaguuCShPg&pid=ImgRaw&r=0"
+                alt=""></li>
+            <li class="textmenu"><a href="WEBTRANGCHU.html"> trang chủ</a></li>
+            <li class="textmenu"><a href="GIOITHIEU.HTML">giới thiệu</a></li>
+            <li class="textmenu"><a href="TINTUC.HTML">tin tức</a></li>
+            <li class="textmenu"><a href="DANGNHAP.HTML">đăng nhập</a></li>
+            <li class="textmenu"><a href="NAPTIEN.HTML">nạp tiền</a></li>
+            <li class="textmenu"><a href="">learn more</a>
+              <ul class="more">
+                <li class="moremini"><a href="https://vi.wikipedia.org/wiki/Cyberpunk" target="_blank">cyberpunk with
+                    wiki</a></li>
+                <li class="moremini"><a href="https://www.facebook.com/hau.quang.927543" target="_blank">partner's
+                    program</a></li>
+              </ul>
+  
+            </li>
+          </ul>
+          <ul class="menuphai">
+            <li class="tim">
+              <ul class="timmini">
+                <li class="timkiem"><input type="text" name="text" id="nhap" placeholder="Nhập thông tin cần tìm....">
+                </li>
+                <li class="search"><i class="fas fa-search" id="search"></i></li>
+              </ul>
+            </li>
+            <li class="textmenudown">
+              <div class="down"> download<i class="fas fa-angle-up" id="muiten"></i></div>
+              <ul class="downmini">
+                <li class="textdown"><a href=""> down on pc</a></li>
+                <li class="textdown"><a href="">xbox</a></li>
+                <li class="textdown"><a href="">play dual</a></li>
+                <li class="textdown"><a href="">play online</a></li>
+  
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <!-- phần detail -->
+ <div class="boss" style="background-image: url(https://3.bp.blogspot.com/-nFoqI4CHTps/XKtRVaiPH7I/AAAAAAAABL0/CtXzgzLXTkkDymHrOa-xIzAVMu1_QGcgQCLcBGAs/s1600/hopiz-art-avengers-4-end-game-logo-fan-made-00000.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <ul class="details" >
+    
+        <li class="detailleft" >
+            <ul class="detaildata">
+                <li class="detailheader">Sign in</li>
+                <li class="detailheaderchild">
+                    <ul class="phandauduoimini">
+                      <a href="https://www.facebook.com/hau.quang.927543">  <li class="head1"><i class="fab fa-facebook" ></i></li></a>
+                      <a href="https://www.google.com/account/about/"><li class="head2"><i class="fab fa-google-plus"></i></li></a>
+                      <a href="https://www.spotify.com/vn-en/mini/?utm_source=vn-en_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_asia_vn_performancemarketing_core_brand+contextual-desktop+text+exact+vn-en+google&gclid=CjwKCAjwz5iMBhAEEiwAMEAwGHXKCypOVOq35GURf-T93chkSmqc3fQCHSPhwhEyTWd8Y_QDA727wxoC5HYQAvD_BwE&gclsrc=aw.ds"><li class="head3"><i class="fab fa-spotify"></i></li></a>
+                    </ul>
+                </li>
+                <li class="phanaccount">or use your account</li>
+                <li class="phanformtk"><input type="text" name="taikhoan" id="taikhoan" required placeholder="User Name"></li>
+                <li class="phanformmk"><input type="password" name="matkhau" id="matkhau" required placeholder="Password"></li>
+                <li class="dk2"><a target="_blank" href="https://www.epicgames.com/fortnite/en-US/home " >forgot your password?</a></li>
+                <li class="phancuoi"><input type="button" name="signin" id="signin" value="Sign in" onclick="check()"></li>
+            </ul>
+        </li>
+        <li class="detailright">
+            <div class="rightdata">
+                <div class="text1">Hello-Bro</div>
+                <div class="text2">Welcome to the word of Cyberpunk<i class="fas fa-gamepad" id="icongame"></i></div>
+                <div class="f"> 
+                   <div class="texttam"></div> 
+                    <a href="DANGKI.HTML"><div class="text3"><input type="submit" name="dk" id="signup" value="Sign up"></div></a>
+                <div>
+               <div class="text4"><img src="imgdangnhap.png"  alt=""></div>
+            </div>
+        </li>
+    </ul>
+</div>
+      <script>
+        function check(){
+          var ten,mk;
+          ten=taikhoan.value;
+          mk=matkhau.value;
+          if(ten!=""&&mk==""){
+            alert("Vui lòng nhập mật khẩu");
+          }
+          else if(ten==""&&mk!=""){
+            alert("Vui lòng nhập tên tài khoản");
+          }
+          else if(ten!=""&&mk!=""){
+            alert("Đăng nhập thành công");
+          }
+          else{
+            alert("Vui lòng nhập tài khoản của bạn để đăng nhập");
+          }
+        }
+
+      </script>
+</body>
+</html>

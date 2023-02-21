@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DANGKI.CSS">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     <link rel="stylesheet" href="DANGKI.CSS">
+</head>
+<body >
+  <!-- phần menu -->
+  <div class="header">
+    <div class="menu">
+      <ul class="menutrai">
+        <li><img src="https://th.bing.com/th/id/R.9e80c9223c82aba13ebcd1cebc31c026?rik=YHRDjaguuCShPg&pid=ImgRaw&r=0"
+            alt=""></li>
+        <li class="textmenu"><a href="WEBTRANGCHU.html"> trang chủ</a></li>
+        <li class="textmenu"><a href="GIOITHIEU.HTML">giới thiệu</a></li>
+        <li class="textmenu"><a href="TINTUC.HTML">tin tức</a></li>
+        <li class="textmenu"><a href="DANGNHAP.HTML">đăng nhập</a></li>
+        <li class="textmenu"><a href="NAPTIEN.HTML">nạp tiền</a></li>
+        <li class="textmenu"><a href="">learn more</a>
+          <ul class="more">
+            <li class="moremini"><a href="https://vi.wikipedia.org/wiki/Cyberpunk" target="_blank">cyberpunk with
+                wiki</a></li>
+            <li class="moremini"><a href="https://www.facebook.com/hau.quang.927543" target="_blank">partner's
+                program</a></li>
+          </ul>
+
+        </li>
+      </ul>
+      <ul class="menuphai">
+        <li class="tim">
+          <ul class="timmini">
+            <li class="timkiem"><input type="text" name="text" id="nhap" placeholder="Nhập thông tin cần tìm....">
+            </li>
+            <li class="search"><i class="fas fa-search" id="search"></i></li>
+          </ul>
+        </li>
+        <li class="textmenudown">
+          <div class="down"> download<i class="fas fa-angle-up" id="muiten"></i></div>
+          <ul class="downmini">
+            <li class="textdown"><a href=""> down on pc</a></li>
+            <li class="textdown"><a href="">xbox</a></li>
+            <li class="textdown"><a href="">play dual</a></li>
+            <li class="textdown"><a href="">play online</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- phần detail -->
+ <div class="boss" style="background-image: url(https://th.bing.com/th/id/R.3c704c8db0da601db0c89e546300b4a0?rik=FjO9kFtWu%2fYbxQ&pid=ImgRaw&r=0);background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <ul class="detail">
+
+        <div class="cauchao " id="chao"></div>
+
+        <ul class="datadetail">
+        <li class="head1">create your an account<i class="fab fa-xbox" id="xbox"></i></li>
+        <li class="head2">
+           <ul class="data">
+            <li class="data1" >tên đăng nhập </li>
+            <li class="data2"><input id="user" type="text" name="user" required placeholder="User"></li>
+           </ul>
+        </li>
+        <li class="head2">
+            <ul class="data">
+             <li class="data1" >mật khẩu </li>
+             <li class="data2"><input id="password"  type="password" name="password" required placeholder="Password"></li>
+            </ul>
+         </li>
+         <li class="head2">
+            <ul class="data">
+             <li class="data1" >nhập lại mật khẩu</li>
+             <li class="data2"> <input id="repassword" type="password" name="repassword" required placeholder="Repassword"></li>
+            </ul>
+         </li>
+         <li class="head2">
+            <ul class="data">
+             <li class="data1" >email</li>
+             <li class="data2"><input id="email" type="text" name="repassword" required placeholder="Email"></li>
+            </ul>
+           <li class="text">Bạn cần nhập email để dễ dàng được hỗ trợ tài khoản<i id="iconwarning" class="fas fa-exclamation"></i></li>
+         </li>
+        
+        <li class="head2"> 
+            <ul class="data"> 
+               <li class="data1"> giới tính</li>
+                <li class="data2">
+                     <input type="radio" name="phai" id="nam"checked>
+                     <label for="nam" id="nam1">Nam</label>
+                     <input type="radio" name="phai" id="nu" >
+                     <label for="nam" id="nu1">Nữ</label>
+                </li>
+            </ul>
+        </li>
+        <li class="head2">
+            <ul class="data">
+             <li class="data1" >số điện thoại</li>
+             <li class="data2"> <input id="sodienthoai" type="number" name="sdt" required placeholder="Number phone"></li>
+            </ul>
+         </li>
+      <li class="head3"><input type="button" name="submit" id="submit" value="Send Now" onclick="checkdangki()" ></li>
+        </ul>
+    </ul>
+</div>
+    <script>
+       
+            var hi;
+            hi=prompt("Nhập tên của bạn:");
+             chao.innerText+="Xin chào "+hi;
+        function checkdangki(){
+          var  tendn,mk,rmk,e,sdt;
+            tendn=user.value;
+            mk=password.value;
+            rmk=repassword.value;
+            e=email.value;
+            sdt=sodienthoai.value;
+            if(tendn==""&&mk!=""&&rmk!=""&&sdt!=""&&e!=""){
+                alert("vui lòng nhập tên đăng kí");
+            }
+            else if(tendn!=""&&mk==""&&rmk!=""&&sdt!=""&&e!=""){
+                alert("Vui lòng nhập mật khẩu");
+            }
+            else if(rmk!=mk&&tendn!=""&&mk!=""&&sdt!=""&&e!=""){
+                alert("Xác nhận mật khẩu sai");
+            }
+            else if(rmk!=""&&tendn!=""&&mk!=""&&sdt!=""&&e==""){
+                alert("Vui lòng nhập email");
+            }
+            else if(rmk!=""&&tendn!=""&&mk!=""&&sdt==""&&e!=""){
+                alert("Vui lòng nhập số điện thoại");
+            }
+            else if(tendn==""&&mk==""&&rmk==""&&sdt==""&&e==""){
+                alert("Vui lòng điền thông tin");
+            }
+            else if(tendn==""||mk==""||rmk==""||sdt==""||e==""){
+                alert("Vui lòng điền đầy đủ thông tin")
+            }
+            else{
+                alert("Đăng kí thành công")
+            }
+        }
+    </script>
+
+</body>
+</html>
